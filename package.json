@@ -1,0 +1,24 @@
+{
+  "name": "olap-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-client": "cd client && npm run start",
+    "start-server": "cd server && npm run restart-server",
+    "dev": "concurrently --kill-others-on-fail \"npm run start-client\" \"npm run start-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovsemykin/olap-master.git"
+  },
+  "author": "o.v.semykin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ovsemykin/olap-master/issues"
+  },
+  "homepage": "https://github.com/ovsemykin/olap-master#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
